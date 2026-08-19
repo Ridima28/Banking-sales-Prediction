@@ -1,4 +1,4 @@
-# Bank Marketing Campaign — Imbalanced Binary Classification
+# Bank Sales Prediction — Imbalanced Binary Classification
 
 A machine learning project for predicting whether a bank customer will subscribe to a term-deposit offer.
 
@@ -314,28 +314,19 @@ Select Model Based on Business Requirements
 
 ---
 
-## 📁 Suggested Project Structure
+## 📁 Project Structure
 
 ```text
 bank-marketing-classification/
 │
-├── data/
-│   └── bank-full.csv
-│
-├── notebooks/
-│   └── bank_marketing_classification.ipynb
-│
-├── src/
-│   ├── preprocessing.py
-│   ├── train.py
-│   └── evaluate.py
-│
-├── results/
-│   ├── confusion_matrix.png
-│   ├── roc_curve.png
-│   └── precision_recall_curve.png
-│
-├── requirements.txt
+├── catboost_info/
+│   └── learn/ 
+|        └── events.out.tfevents/
+|   ├── catboost_training.json
+|   ├── learn_error.tsv
+|   └── time_left.tsv
+├── bank-additional-full.csv
+├── main.ipynb
 └── README.md
 ```
 
@@ -346,7 +337,7 @@ bank-marketing-classification/
 Clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/bank-marketing-classification.git
+git clone https://github.com/Ridima28/Banking-sales-Prediction.git
 cd bank-marketing-classification
 ```
 
@@ -369,7 +360,7 @@ jupyter notebook
 Then run:
 
 ```text
-notebooks/bank_marketing_classification.ipynb
+notebooks/main.ipynb
 ```
 
 ---
